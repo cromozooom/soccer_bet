@@ -1,0 +1,37 @@
+.border-bottom
+  border-bottom: 2px solid rgba(white, .2)
+.betScores
+  font-family: $custom-font
+  font-weight: 700
+  font-size: 6em
+  color: $normalText
+  .split
+    font-weight: 300
+    padding: .1em
+.score
+  padding: 0 .2em
+.oldBetScore
+  font-size: .7em
+  position: relative
+  :after
+    content: ""
+    width: 70%
+    height: 1px
+    //display: inline-block
+    position: absolute
+    border-top: 7px solid red
+    bottom: 45%
+    left: .35em
+//.oldBetScore
+//  background: red
+//.newBetScore
+//  background: blue
+
+.oldBetScore, .newBetScore
+  padding-top: 0
+  padding-bottom: 0
+
+
+@media (min-width: $screen-sm-min)
+  .betScores
+    font-size: 8em

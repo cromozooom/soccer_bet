@@ -1,0 +1,51 @@
+.teams
+    font-family: $custom-font
+    color: $normalText
+    position: relative
+    .team
+        //background: $brand-primary
+        text-transform: uppercase
+        padding: 0
+        text-align: center
+        margin-bottom: 2em
+    .teamName
+        font-size: 1.5em
+    .team2
+        margin-bottom: 0em
+    .split
+        position: absolute
+        left: 50%
+        top: 55%
+        height: 1.5em
+        width: 1.5em
+        font-size: 1.5em
+        border-radius: 50%
+        background: $brandNetbet
+        border: .15em solid white
+        text-align: center
+        line-height: 1em
+        transform: translate(-50%,-50%)
+        color: white
+@media (min-width: $screen-sm-min)
+    .teams
+        border-bottom: 2px solid rgba(white, .2)
+        max-width: $maxWidth
+        margin: 0 auto
+        .team
+            .teamName
+                font-size:2.5em
+        .team
+            margin-bottom: 0
+        .team1
+            text-align: right
+            padding-right: 3em
+        .team2
+            text-align: left
+            padding-left: 3em
+        .split
+            top: 60%
+@media (max-width: $screen-md-min ) and (min-width: $screen-sm-min )
+    .teams
+        .team
+            .teamName
+                font-size: 2em
