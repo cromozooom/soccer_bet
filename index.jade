@@ -31,27 +31,54 @@ html(lang='en')
 		//- A RESPONSIVE IMAGE POLYFILL
 		script.
 			document.createElement( "picture" );
-		script(src="assets/javascripts/picturefill.min.js" async)
+		script(src="#{pathToAssets}assets/javascripts/picturefill.min.js" async)
 	body
 		.container-fluid.heroContainer
-			picture
-				source(srcset="#{pathToAssets}assets/images/bg_desk.jpg" media="(min-width: 1000px)")
-				source(srcset="#{pathToAssets}assets/images/bg_tablet.jpg" media="(min-width: 800px)")
-				source(srcset="#{pathToAssets}assets/images/bg_mobile.jpg" media="(min-width: 420px)")
-				source(srcset="#{pathToAssets}assets/images/bg_mobile.jpg" media="(min-width: 320px)")
-				img.heroImage.img-responsive(srcset="#{pathToAssets}assets/images/bg_default.jpg" alt="…")
-
-			
-			//- img(src='#{pathToAssets}assets/images/bg_desk.jpg')
+			//- background pictures
 			section.teamOffert
+				picture
+					source(srcset="#{pathToAssets}assets/images/bg_desk.jpg" media="(min-width: 1000px)")
+					source(srcset="#{pathToAssets}assets/images/bg_tablet.jpg" media="(min-width: 800px)")
+					source(srcset="#{pathToAssets}assets/images/bg_mobile.jpg" media="(min-width: 420px)")
+					source(srcset="#{pathToAssets}assets/images/bg_mobile.jpg" media="(min-width: 320px)")
+					img.heroImage.img-responsive(srcset="#{pathToAssets}assets/images/bg_default.jpg" alt="#{titlePage}")
+				.timerSection
+					#timer
+						.time-text
+							span.text.days_text
+							span.text.hours_text
+							span.text.minutes_text
+							span.text.seconds_text
+						.time-count
+							span.days
+							span.hours
+							span.minutes
+							span.seconds
+				
 				include include/teams.jade
 				include include/centeredLeadText.jade
 				include include/betScores.jade
 				include include/code.jade
 				include include/ctaCenter.jade
-
+				
 		//- Bootstrap core JavaScript
 		//- ==================================================
 		//- Placed at the end of the document so the pages load faster
 		script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+		script(src='#{pathToAssets}assets/javascripts/jquery.countdown.min.js')
+		script.
+			$('#timer').countdown({
+				date: '04/02/2016 23:59:59',
+				offset: +1,
+				day: 'day',
+				days: 'days',
+				hour: 'hr.',
+				hours: 'hrs.',
+				minute: 'min.',
+				minutes: 'mins.',
+				second: 'sec.',
+				seconds: 'sec.'
+				}, function () {
+				alert('Done!');
+			});
 		//- script(src='#{pathToAssets}assets/javascripts/bootstrap.min.js')

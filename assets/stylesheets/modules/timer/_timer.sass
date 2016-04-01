@@ -1,0 +1,69 @@
+.timerSection
+    //background: red
+    width: 100%
+    height: 8em
+    padding: 0
+#timer
+    //border:  1px solid red
+    z-index: 2
+    font-family: $custom-font
+    color: $normalText
+    margin: 0
+    padding: 0 0 10px 0
+    display: block
+    //float: left
+    text-align: center
+    background-color: $contrastText
+    border-radius: 5px
+    //overflow: hidden
+    position: absolute
+    left: 50%
+    transform: translate(-50%,0%)
+    //width: 100%
+    span
+        //border: 1px solid red
+        display: block
+        float: left
+        width: 50px
+        height: 1em
+        //overflow: hidden
+
+.time-text, .time-count
+    overflow: hidden
+    padding: 10px
+    display: block
+    display: block
+    float: left
+    margin: 0 auto
+.time-text
+    background-color: darken( $contrastText, 10%)
+    padding-top: 0
+    color: black
+    font-size: 14px
+    border-radius: 5px 5px 0 0
+    font-family: Arial
+    padding-top: 10px
+.time-count
+    clear: both
+    font-size: 2em
+    font-weight: 300
+    color: darken( $contrastText, 30%)
+span.days::after, span.hours::after, span.minutes::after
+    content: ':'
+    margin-left: .1em
+
+@media (max-width: $screen-xs-min)
+    .timerSection
+        height: 5em
+        padding: 0
+    #timer
+        span
+            width: 30px
+    .time-text, .time-count
+
+    .time-text
+        font-size: 11px
+    .time-count
+        font-size: 1em
+        span
+            font-weight: 700
