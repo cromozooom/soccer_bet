@@ -1,3 +1,3 @@
-# team
+# Soccer bet
 bet team offert
-[sample](https://rawgit.com/cromozooom/team/master/index.html)
+[sample](https://rawgit.com/cromozooom/soccer_bet/master/index.html)
