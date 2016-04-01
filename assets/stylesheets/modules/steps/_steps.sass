@@ -1,0 +1,29 @@
+.step
+    padding-left: 80px
+    padding-top: 20px
+    h5
+        font-family: $custom-font
+        font-size: 2em
+        color: $contrastText
+        font-weight: 500
+    p
+        color: darken(white, 50%)
+    .number
+        position: absolute
+        top: 25px
+        left: 20px
+        font-family: $custom-font
+        color: $normalText
+        font-size: 2em
+        line-height: 2em
+        text-align: center
+        width: 2em
+        height: 2em
+        border: 2px solid darken(white, 50%)
+        border-radius: 50%
+
+@media (min-width: $screen-sm-min)
+    .step
+    padding-left: 70px
+        .number
+            left: 0

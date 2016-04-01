@@ -36,34 +36,31 @@ html(lang='en')
 		.container-fluid.heroContainer
 			//- background pictures
 			section.teamOffert
-				picture
-					source(srcset="#{pathToAssets}assets/images/bg_1440.jpg" media="(min-width: 1440px)")
-					source(srcset="#{pathToAssets}assets/images/bg_1024.jpg" media="(min-width: 1024px)")
-					source(srcset="#{pathToAssets}assets/images/bg_768.jpg" media="(min-width: 768px)")
-					source(srcset="#{pathToAssets}assets/images/bg_425.jpg" media="(min-width: 425px)")
-					source(srcset="#{pathToAssets}assets/images/bg_375.jpg" media="(max-width: 375px)")
-					source(srcset="#{pathToAssets}assets/images/bg_375.jpg" media="(max-width: 325px)")
-					
-					img.heroImage.img-responsive(srcset="#{pathToAssets}assets/images/bg_1024.jpg" alt="#{titlePage}")
-				.timerSection
-					#timer
-						.time-text
-							span.text.days_text
-							span.text.hours_text
-							span.text.minutes_text
-							span.text.seconds_text
-						.time-count
-							span.days
-							span.hours
-							span.minutes
-							span.seconds
-				
+				include include/heroImage.jade
+				include include/timer.jade
 				include include/teams.jade
 				include include/centeredLeadText.jade
 				include include/betScores.jade
 				include include/code.jade
 				include include/ctaCenter.jade
-				
+		.container
+			.row
+				.col-sm-12.col-md-3
+					.step
+						.number 1
+						h5= step01
+						p= step01Sescription
+				.col-sm-12.col-md-5
+					.step
+						.number 2
+						h5= step02
+						p= step02Sescription
+				.col-sm-12.col-md-4
+					.step
+						.number 1
+						h5= step03
+						p= step03Sescription
+			
 		//- Bootstrap core JavaScript
 		//- ==================================================
 		//- Placed at the end of the document so the pages load faster
