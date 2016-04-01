@@ -33,7 +33,7 @@ html(lang='en')
 			document.createElement( "picture" );
 		script(src="#{pathToAssets}assets/javascripts/picturefill.min.js" async)
 	body
-		.container-fluid.heroContainer
+		.container-fluid.heroContainer.containerFull
 			//- background pictures
 			section.teamOffert
 				include include/heroImage.jade
@@ -44,23 +44,9 @@ html(lang='en')
 				include include/code.jade
 				include include/ctaCenter.jade
 		.container
-			.row
-				.col-sm-12.col-md-3
-					.step
-						.number 1
-						h5= step01
-						p= step01Sescription
-				.col-sm-12.col-md-5
-					.step
-						.number 2
-						h5= step02
-						p= step02Sescription
-				.col-sm-12.col-md-4
-					.step
-						.number 1
-						h5= step03
-						p= step03Sescription
-			
+			include include/steps.jade
+		.container-fluid.containerFull
+			include include/footerText.jade
 		//- Bootstrap core JavaScript
 		//- ==================================================
 		//- Placed at the end of the document so the pages load faster
