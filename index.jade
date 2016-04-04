@@ -1,6 +1,6 @@
 include setUP/teamConfig.jade
 doctype html
-html(lang='en')
+html(lang='EN')
 	head
 		meta(charset='utf-8')
 		meta(http-equiv='X-UA-Compatible', content='IE=edge')
@@ -41,7 +41,7 @@ html(lang='en')
 				include include/teams.jade
 				include include/centeredLeadText.jade
 				include include/betScores.jade
-				include include/code.jade
+				//include include/code.jade
 				include include/ctaCenter.jade
 		.container
 			include include/steps.jade
@@ -54,7 +54,7 @@ html(lang='en')
 		script(src='#{pathToAssets}assets/javascripts/jquery.countdown.min.js')
 		script.
 			$('#timer').countdown({
-				date: '04/02/2016 23:59:59',
+				date: '04/04/2016 23:59:59',
 				offset: +1,
 				day: 'day',
 				days: 'days',
