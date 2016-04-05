@@ -42,21 +42,20 @@
             <div class="time-count"><span class="days"></span><span class="hours"></span><span class="minutes"></span><span class="seconds"></span></div>
           </div>
         </div>
-        <div class="row maxWidth teams">
-          <div class="col-xs-12 col-sm-6 team team1">
-            <h1 class="teamName">Barcelona</h1>
-          </div>
-          <div class="col-xs-12 col-sm-6 team team2">
-            <h1 class="teamName">Bayern Munich</h1>
-          </div>
-          <div class="split">&
-          </div>
-        </div>
-        <div class="row maxWidth centeredLeadText">
+        <div class="row">
           <div class="col-xs-12">
-            <p class="lead strong text-center">BOTH TEAMS TO WIN</p>
+            <p class="titleEvent text-center">CHAMPIONS LEAGUE ACCA</p>
           </div>
         </div>
+        <!--include include/twoTeams.jade-->
+        <div class="row maxWidth moreTeams">
+          <div class="col-xs-12 col-sm-12 text-center">
+            <h1 class="teamName">Both teams to win:<br><span class="team">
+                <nobr>Barcelona </nobr>&
+                <nobr>Bayern Munich </nobr></span></h1>
+          </div>
+        </div>
+        <!--include include/centeredLeadText.jade-->
         <div class="row maxWidth">
           <div class="col-xs-12 border-bottom">
             <p class="text-center betScores">
@@ -64,32 +63,16 @@
             </p>
           </div>
         </div>
+        <!--include include/code.jade-->
         <div class="row doubleColumnContent vdivide maxWidth">
-          <div class="col-xs-12 col-sm-6">
-            <p class="code text-center">BONUSCODE<span>UCL10</span></p>
+          <div class="col-sm-12 col-md-6">
+            <p class="code text-center">BONUSCODE<span>UCL10</span><br><span>£ 5 FREE BET</span>IF YOU LOSE</p>
           </div>
-          <div class="col-xs-12 col-sm-6">
-            <p class="text-center offert"><span>
-                £ 5
-                 FREE BET</span>IF YOU LOSE
-              <!--br.visible-sm-block.visible-md-block.visible-lg-block-->
-              <!--| sie verlieren-->
-            </p>
-          </div>
-        </div>
-        <div class="row maxWidth">
-          <div class="col-xs-12 text-center">
+          <div class="col-sm-12 col-md-6 text-center">
             <button type="button" class="btn ctaCenter text-center cta btn-success btn-lg">JOIN NOW</button>
           </div>
         </div>
-        <!--.row.maxWidth
-        .col-sm-12.col-md-6
-            p.code.text-center
-                | BONUSCODE
-                span UCL10
-        .col-sm-12.col-md-6.text-center
-            button.btn.ctaCenter.text-center.cta.btn-success.btn-lg(type="button")= cta
-        -->
+        <!--include include/ctaCenter.jade-->
       </section>
     </div>
     <div class="container">
