@@ -3555,7 +3555,7 @@ button.btn.ctaCenter.btn-lg {
   padding: 0 0 10px 0;
   display: block;
   text-align: center;
-  background-color: #fff200;
+  background-color: #ed300f;
   border-radius: 5px;
   position: absolute;
   left: 50%;
@@ -3594,7 +3594,7 @@ button.btn.ctaCenter.btn-lg {
   clear: both;
   font-size: 2em;
   font-weight: 300;
-  color: #010100;
+  color: white;
 }
 
 span.days::after, span.hours::after, span.minutes::after {
