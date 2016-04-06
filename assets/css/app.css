@@ -3331,7 +3331,7 @@ button.btn.ctaCenter.btn-lg {
 
 .teams .teamName {
   font-size: 1.5em;
-  color: #509901;
+  color: white;
 }
 
 .teams .team2 {
@@ -3445,7 +3445,7 @@ button.btn.ctaCenter.btn-lg {
 
 .betScores .time {
   font-size: .5em;
-  color: #509901;
+  color: white;
 }
 
 .score {
@@ -3482,6 +3482,7 @@ button.btn.ctaCenter.btn-lg {
 }
 
 .newBetScore .time {
+  color: #509901;
   padding-right: 0.5em;
 }
 
