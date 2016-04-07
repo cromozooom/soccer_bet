@@ -26,7 +26,7 @@ $degree: -10deg
         position: absolute
         border-top: 7px solid rgba($contrastText, 1)
         bottom: 45%
-        left: 35%
+        left: 40%
 
     :after
         transform: rotate($degree)
@@ -39,13 +39,19 @@ $degree: -10deg
 //.newBetScore
 //  background: blue
 .oldBetScore
+    letter-spacing: -.04em
     .time
+        letter-spacing: normal
         padding-right:0.5em
 .newBetScore
-    color: $contrastText
+    letter-spacing: -.1em
+    color: lighten($contrastText, 15%)
     .time
+        letter-spacing: normal
         color: $contrastText
-        padding-right:0.5em
+        padding-left: 0.5em
+        padding-right: 0.2em
+
 .oldBetScore, .newBetScore
     padding-top: 0
     padding-bottom: 0

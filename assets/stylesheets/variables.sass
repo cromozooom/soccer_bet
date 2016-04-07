@@ -16,7 +16,7 @@ $gray:                   lighten($gray-base, 33.5%) !default // #555
 $gray-light:             lighten($gray-base, 46.7%) !default // #777
 $gray-lighter:           lighten($gray-base, 93.5%) !default // #eee
 
-$brand-primary:         red
+$brand-primary:         #509901
 $brand-success:         #008c44
 $brand-info:            #5bc0de !default
 $brand-warning:         #f0ad4e !default
@@ -333,9 +333,11 @@ $grid-columns:              12 !default
 $grid-gutter-width:         30px !default
 // Navbar collapse
 //** Point at which the navbar becomes uncollapsed.
-$grid-float-breakpoint:     $screen-sm-min !default
+// ------- $grid-float-breakpoint:     $screen-sm-min !default
+$grid-float-breakpoint:     10px
 //** Point at which the navbar begins collapsing.
-$grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default
+// ------- $grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default
+$grid-float-breakpoint-max: 11px
 
 
 //== Container sizes

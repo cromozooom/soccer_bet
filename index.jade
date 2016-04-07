@@ -33,6 +33,7 @@ html(lang='EN')
 			document.createElement( "picture" );
 		script(src="#{pathToAssets}assets/javascripts/picturefill.min.js" async)
 	body
+		include include/topNavbar.jade
 		.container-fluid.heroContainer.containerFull
 			//- background pictures
 			section.teamOffert
@@ -44,18 +45,23 @@ html(lang='EN')
 				
 				include include/centeredLeadText.jade
 				include include/betScores.jade
-				include include/code.jade
+				include include/customdata/1072/code_1072.jade
 				//include include/ctaLeft.jade
 				include include/ctaCenter.jade
 		.container
-			include include/steps.jade
+			include include/customdata/1072/steps_1072.jade
 		.container-fluid.containerFull
 			include include/footerText.jade
+		
+		//- uncoment this if you want to have the bottom CTA
+		//- include include/footerNav.jade
+		
 		//- Bootstrap core JavaScript
 		//- ==================================================
 		//- Placed at the end of the document so the pages load faster
 		script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
 		script(src='#{pathToAssets}assets/javascripts/jquery.countdown.min.js')
+		script(src='#{pathToAssets}assets/javascripts/bootstrap.min.js')
 		script.
 			$('#timer').countdown({
 				date: '04/11/2016 08:30:00',

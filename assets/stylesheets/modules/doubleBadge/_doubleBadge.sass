@@ -1,0 +1,36 @@
+$badgeColor: $contrastText
+.doubleBadge
+    font-family: $custom-font
+    padding: 0
+    margin: 0
+    //background: red
+    //line-height: 2em
+    border: 3px solid $badgeColor
+    border-radius: .5em
+    overflow: hidden
+    display: inline-block
+    float: left
+    span
+        position: relative
+        margin: 0
+        padding: 0
+        display: block
+        float: left
+        //background: $badgeColor
+        line-height: 2em
+    :first-child
+        background: transparent
+        color: $badgeColor
+        padding: 0 .8em
+    :last-child
+        padding: 0 .8em
+        background: $badgeColor
+        color: white
+    .first::after
+    	content: ''
+        display: inline-block
+        border-left: 7px solid transparent
+        border-right: 7px solid $badgeColor
+        border-bottom: 1.2em solid $badgeColor
+        border-top: 1.2em solid $badgeColor
+        background: transparent
