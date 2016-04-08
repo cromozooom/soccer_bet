@@ -26,7 +26,7 @@
   </head>
   <body>
     <div role="navigation" class="navbar navbar-default navbar-fixed-top">
-      <div class="container"><a href="#" rel="nofollow" class="pull-left">
+      <div class="container"><a href="{$url}" rel="nofollow" title="NetBet" class="pull-left">
           <div class="svg-container"><!-- ?xml version="1.0" encoding="utf-8"?-->
 
 <!--svg version="1.1" id="net_bet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 180 50" style="enable-background:new 0 0 180 50;" xml:space="preserve"-->
@@ -103,10 +103,21 @@
 </svg>
 
           </div></a>
-        <p class="custommesage"><span>NUR  </span>FÜR NEUKUNDEN</p><a href="" class="img-responsive pull-right logoCo"><img src="assets/images/logoProtv.png"></a>
+        <!-- nathy-->
+        <!-- {if $text}-->
+        <p class="custommesage">
+          <!-- nathy-->
+          <!-- {$text}--><span>NUR  </span>FÜR NEUKUNDEN
+        </p>
+        <!-- nathy-->
+        <!-- {/if}-->
+        <!-- nathy-->
+        <!-- {if $co_logo}--><a href="" class="pull-right logoCo"><img src="assets/images/logoProtv.png" class="img-responsive">
+          <!-- img.img-responsive(src="{$co_logo}")--></a>
+        <!-- nathy-->
+        <!-- {/if}-->
       </div>
     </div>
-    <!--//.container-->
     <div class="container-fluid heroContainer containerFull">
       <section class="teamOffert"><a href="http://www.solopx.com" title="Bayern München ur für neukunden, war 1,07 jetzt 6,6">
           <picture>
