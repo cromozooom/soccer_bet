@@ -4126,7 +4126,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   text-align: center;
   width: 2em;
   height: 2em;
-  border: 2px solid #0d0d0d;
+  border: 2px solid #bfbfbf;
   border-radius: 50%;
 }
 
@@ -4480,7 +4480,7 @@ button.btn.ctaCenter.btn-lg {
 
 .newBetScore .time {
   letter-spacing: normal;
-  color: #509901;
+  color: #78e501;
   padding-left: 0.5em;
   padding-right: 0.2em;
 }
@@ -4554,7 +4554,7 @@ button.btn.ctaCenter.btn-lg {
   padding: 0 0 10px 0;
   display: block;
   text-align: center;
-  background-color: #ed300f;
+  background-color: #D61F27;
   border-radius: 5px;
   position: absolute;
   left: 50%;
