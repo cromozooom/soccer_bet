@@ -4087,6 +4087,10 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
     height: 20px;
     margin-top: 15px;
   }
+  .logoCo img {
+    max-height: 30px;
+    margin-top: 10px;
+  }
 }
 
 .steps {
@@ -4122,7 +4126,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   text-align: center;
   width: 2em;
   height: 2em;
-  border: 2px solid #4d4d4d;
+  border: 2px solid #0d0d0d;
   border-radius: 50%;
 }
 
