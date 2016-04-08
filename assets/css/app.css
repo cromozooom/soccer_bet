@@ -4082,6 +4082,13 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   margin-top: 5px;
 }
 
+@media (max-width: 480px) {
+  .navbar .svg-container svg {
+    height: 20px;
+    margin-top: 15px;
+  }
+}
+
 .steps {
   padding: 20px 0;
 }
