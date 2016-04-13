@@ -4130,6 +4130,10 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   border-radius: 50%;
 }
 
+.step .accent {
+  color: #509901;
+}
+
 @media (min-width: 768px) {
   .step {
     padding-left: 70px;
@@ -4504,6 +4508,7 @@ button.btn.ctaCenter.btn-lg {
 }
 
 .code {
+  margin-top: 1em;
   color: white;
   font-size: 1em;
   text-align: center;
@@ -4546,7 +4551,7 @@ button.btn.ctaCenter.btn-lg {
 }
 
 .anglePlus .anglePlus-caption {
-  fill: #509901;
+  fill: black;
 }
 
 @media (min-width: 768px) {
