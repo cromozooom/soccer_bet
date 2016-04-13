@@ -1,0 +1,25 @@
+.teams
+    position: relative
+    border-bottom: none
+
+    .team
+        background: $brandNetbet
+        border-radius: 1.2em
+        //padding-bottom: .5em
+        color: white
+        //width: auto
+        //max-width: 350px
+        margin: 0 auto
+        text-align: center
+
+@media (min-width: $screen-sm-min)
+    .teams
+        border-bottom: none
+        max-width: $maxWidth
+        margin: 0 auto
+
+@media (max-width: $screen-md-min ) and (min-width: $screen-sm-min )
+    .teams
+        .team
+            .teamName
+                font-size: 1em

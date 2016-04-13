@@ -2,8 +2,10 @@
 <!-- lang available DE-->
 <!-- id taiga is for hero image bg and others assets-->
 <!-- one vs other-->
-<!-- can be "versus" = "v"-->
-<!-- or "and" = &-->
+<!-- "versus" = "v"-->
+<!-- "and" = &-->
+<!-- "or" = OR-->
+
 <!-- witch team are playing? -->
 <!-- bet 1--><!DOCTYPE html>
 <html lang="EN">
@@ -15,7 +17,7 @@
     <meta name="author" content="">
     <link rel="icon" href="/docs/favicon.ico">
     <title>Real Madrid to Qualify, was 5/6 NOW 10/1</title>
-    <link href="assets/css/app.css" rel="stylesheet">
+    <link href="assets/css/app_1082.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,700,300" rel="stylesheet" type="text/css">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries-->
     <!--if lt IE 9-->
@@ -121,12 +123,12 @@
     <div class="container-fluid heroContainer containerFull">
       <section class="teamOffert"><a href="http://www.solopx.com" title="Real Madrid to Qualify, was 5/6 NOW 10/1">
           <picture>
-            <source srcset="assets/images/1083/bg_1440.jpg" media="(min-width: 1440px)">
-            <source srcset="assets/images/1083/bg_1024.jpg" media="(min-width: 1024px)">
-            <source srcset="assets/images/1083/bg_768.jpg" media="(min-width: 768px)">
-            <source srcset="assets/images/1083/bg_425.jpg" media="(min-width: 425px)">
-            <source srcset="assets/images/1083/bg_375.jpg" media="(min-width: 375px)">
-            <source srcset="assets/images/1083/bg_375.jpg" media="(min-width: 300px)"><img srcset="assets/images/1083/bg_1024.jpg" alt="Real Madrid to Qualify, was 5/6 NOW 10/1" class="heroImage img-responsive">
+            <source srcset="assets/images/1082/bg_1440.jpg" media="(min-width: 1440px)">
+            <source srcset="assets/images/1082/bg_1024.jpg" media="(min-width: 1024px)">
+            <source srcset="assets/images/1082/bg_768.jpg" media="(min-width: 768px)">
+            <source srcset="assets/images/1082/bg_425.jpg" media="(min-width: 425px)">
+            <source srcset="assets/images/1082/bg_375.jpg" media="(min-width: 375px)">
+            <source srcset="assets/images/1082/bg_375.jpg" media="(min-width: 300px)"><img srcset="assets/images/1082/bg_1024.jpg" alt="Real Madrid to Qualify, was 5/6 NOW 10/1" class="heroImage img-responsive">
           </picture></a>
         <div class="timerSection">
           <div id="timer">
@@ -135,40 +137,42 @@
           </div>
         </div>
         <!--include include/titleEvent.jade-->
-        <div class="row maxWidth teams">
-          <div class="col-xs-12 col-sm-6 team team1">
-            <h1 class="teamName">Benfica</h1>
-          </div>
-          <div class="col-xs-12 col-sm-6 team team2">
-            <h1 class="teamName">Bayern Münich</h1>
-          </div>
-          <div class="splitTeam">vs
+        <div class="container">
+          <div class="row teams">
+            <div class="col-xs-12 col-sm-6">
+              <div class="team team1">
+                <h1 class="teamName">Man City to WIN@ 10/1</h1>
+              </div>
+              <p class="text-center betScores">
+                <spans class="score oldBetScore"><span class="time">WAS</span>5<span class="split">/</span>6</spans><span class="score newBetScore"><span class="time">NOW</span>10<span class="split">/</span>1</span>
+              </p>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <div class="team team2">
+                <h1 class="teamName">PSG to WIN</h1>
+              </div>
+              <p class="text-center betScores">
+                <spans class="score oldBetScore"><span class="time">WAS</span>5<span class="split">/</span>6</spans><span class="score newBetScore"><span class="time">NOW</span>10<span class="split">/</span>1</span>
+              </p>
+            </div>
+            <div class="splitTeam">OR
+            </div>
           </div>
         </div>
         <!--include include/moreTeams.jade-->
-        <div class="row maxWidth centeredLeadText">
-          <div class="col-xs-12">
-            <p class="lead strong text-center">Real Madrid to Qualify</p>
+        <!--include include/centeredLeadText.jade-->
+        <!--include include/betScoresDouble.jade-->
+        <div class="row doubleColumnContent vdivide maxWidth">
+          <div class="col-xs-12 col-sm-6">
+            <p class="code text-center">BONUS CODE<span>UCL10</span></p>
           </div>
-        </div>
-        <div class="row maxWidth">
-          <div class="col-xs-12 border-bottom">
-            <p class="text-center betScores">
-              <spans class="score oldBetScore"><span class="time">WAS</span>5<span class="split">/</span>6</spans><span class="score newBetScore"><span class="time">NOW</span>10<span class="split">/</span>1</span>
+          <div class="col-xs-12 col-sm-6">
+            <p class="text-center offert">BIS ZU<span>
+                5 €
+                BONUS-WETTE</span><br>FALLS SIE VERLIEREN
+              <!--br.visible-sm-block.visible-md-block.visible-lg-block-->
+              <!--| sie verlieren-->
             </p>
-          </div>
-        </div>
-        <!--include include/customdata/1072/code_1072.jade-->
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 text-center">
-              <p class="offert">Up to  <span>
-                  5 €
-                  BONUS </span>if You Lose
-                <!--br.visible-sm-block.visible-md-block.visible-lg-block-->
-                <!--| sie verlieren-->
-              </p>
-            </div>
           </div>
         </div>
         <!--include include/ctaLeft.jade-->
@@ -213,7 +217,7 @@
     <script src="assets/javascripts/bootstrap.min.js"></script>
     <script>
       $('#timer').countdown({
-      	date: '05/11/2016 08:30:00',
+      	date: '04/12/2016 19:45:00',
       	offset: +1,
       	day: 'day',
       	days: 'days',

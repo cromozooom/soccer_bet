@@ -2,13 +2,13 @@
     .col-xs-12.border-bottom
         p.text-center.betScores
             spans.score.oldBetScore
-                span.time WAR
+                span.time #{firstBetTime}
                 | #{firstBetValue01}
                 span.split= splitBetvalue
                 | #{firstBetValue02}
             //- br.visible-xs-block
             span.score.newBetScore
-                span.time JETZT
+                span.time #{secondBetTime}
                 | #{secondaBetValue01}
                 span.split= splitBetvalue
                 | #{secondaBetValue02}

@@ -3,8 +3,11 @@
         h1.teamName= team01
     .col-xs-12.col-sm-6.team.team2
         h1.teamName= team02
-    .split
+    .splitTeam
         if teamSeparator == "versus"
             | vs
         if teamSeparator == "and"
             | &
+        if teamSeparator == "or"
+            | OR
+        

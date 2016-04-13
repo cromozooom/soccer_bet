@@ -4558,7 +4558,7 @@ button.btn.ctaCenter.btn-lg {
   padding: 0 0 10px 0;
   display: block;
   text-align: center;
-  background-color: transparent;
+  background-color: #d91f27;
   border-radius: 5px;
   position: absolute;
   left: 50%;
@@ -4585,7 +4585,7 @@ button.btn.ctaCenter.btn-lg {
 
 .time-text {
   padding-top: 0;
-  color: #d91f27;
+  color: #f1a0a3;
   font-size: 12px;
   border-radius: 5px 5px 0 0;
   font-family: Arial;
@@ -4631,4 +4631,8 @@ span.days::after, span.hours::after, span.minutes::after {
   font-size: 1.5em;
 }
 
-/*# sourceMappingURL=app.css.map */
+.border-bottom {
+  border-bottom: none;
+}
+
+/*# sourceMappingURL=app_1072.css.map */

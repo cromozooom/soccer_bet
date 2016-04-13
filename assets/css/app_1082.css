@@ -4032,7 +4032,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 
 .maxWidth {
-  max-width: 580px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -4304,7 +4304,7 @@ button.btn.ctaCenter.btn-lg {
 @media (min-width: 768px) {
   .teams {
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-    max-width: 580px;
+    max-width: 100%;
     margin: 0 auto;
     margin-bottom: 1em;
   }
@@ -4408,7 +4408,7 @@ button.btn.ctaCenter.btn-lg {
 }
 
 .centeredLeadText .row {
-  max-width: 580px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -4498,7 +4498,7 @@ button.btn.ctaCenter.btn-lg {
 }
 
 .doubleColumnContent {
-  max-width: 580px;
+  max-width: 100%;
   margin: 0 auto;
   padding-top: 1em;
 }
@@ -4631,4 +4631,31 @@ span.days::after, span.hours::after, span.minutes::after {
   font-size: 1.5em;
 }
 
-/*# sourceMappingURL=app.css.map */
+.teams {
+  position: relative;
+  border-bottom: none;
+}
+
+.teams .team {
+  background: #d91f27;
+  border-radius: 1.2em;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .teams {
+    border-bottom: none;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+  .teams .team .teamName {
+    font-size: 1em;
+  }
+}
+
+/*# sourceMappingURL=app_1082.css.map */

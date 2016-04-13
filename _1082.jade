@@ -1,4 +1,4 @@
-include setUP/teamConfig.jade
+include setUP/teamConfig_1082.jade
 doctype html
 html(lang='EN')
 	head
@@ -10,7 +10,7 @@ html(lang='EN')
 		link(rel='icon', href='#{pathToAssets}/docs/favicon.ico')
 		title= titlePage
 		//- Bootstrap core CSS
-		link(href='#{pathToAssets}assets/css/app.css', rel='stylesheet')
+		link(href='#{pathToAssets}assets/css/app_#{idTaiga}.css', rel='stylesheet')
 		
 		//- Just for debugging purposes. Don't actually copy these 2 lines!
 		//-if lt IE 9
@@ -40,15 +40,12 @@ html(lang='EN')
 				include include/heroImage.jade
 				include include/timer.jade
 				//include include/titleEvent.jade
-				include include/twoTeams.jade
+				include include/customData/1082/twoTeams.jade
 				//include include/moreTeams.jade
 				
-				include include/centeredLeadText.jade
-				include include/betScores.jade
-				
-				//include include/customdata/1072/code_1072.jade
-				include include/code.jade
-				
+				//include include/centeredLeadText.jade
+				//include include/betScoresDouble.jade
+				include include/customdata/1072/code_1072.jade
 				//include include/ctaLeft.jade
 				include include/ctaCenter.jade
 		.container
@@ -67,7 +64,7 @@ html(lang='EN')
 		script(src='#{pathToAssets}assets/javascripts/bootstrap.min.js')
 		script.
 			$('#timer').countdown({
-				date: '05/11/2016 08:30:00',
+				date: '04/12/2016 19:45:00',
 				offset: +1,
 				day: 'day',
 				days: 'days',

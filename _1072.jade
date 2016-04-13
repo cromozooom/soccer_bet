@@ -1,4 +1,4 @@
-include setUP/teamConfig.jade
+include setUP/teamConfig_1072.jade
 doctype html
 html(lang='EN')
 	head
@@ -10,7 +10,7 @@ html(lang='EN')
 		link(rel='icon', href='#{pathToAssets}/docs/favicon.ico')
 		title= titlePage
 		//- Bootstrap core CSS
-		link(href='#{pathToAssets}assets/css/app.css', rel='stylesheet')
+		link(href='#{pathToAssets}assets/css/app_#{idTaiga}.css', rel='stylesheet')
 		
 		//- Just for debugging purposes. Don't actually copy these 2 lines!
 		//-if lt IE 9
@@ -47,12 +47,12 @@ html(lang='EN')
 				include include/betScores.jade
 				
 				//include include/customdata/1072/code_1072.jade
-				include include/code.jade
+				include include/customdata/1072/code.jade
 				
 				//include include/ctaLeft.jade
 				include include/ctaCenter.jade
 		.container
-			include include/customdata/1072/steps_1072.jade
+			include include/customdata/1072/steps.jade
 		.container-fluid.containerFull
 			include include/footerText.jade
 		

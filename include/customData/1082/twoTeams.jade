@@ -1,0 +1,42 @@
+.container
+    .row.teams
+        .col-xs-12.col-sm-6
+            .team.team1
+                h1.teamName= team01
+                    | @ 10/1
+            p.text-center.betScores
+                spans.score.oldBetScore
+                    span.time WAS
+                    | #{firstBetValue01}
+                    span.split= splitBetvalue
+                    | #{firstBetValue02}
+                //- br.visible-xs-block
+                span.score.newBetScore
+                    span.time NOW
+                    | #{secondaBetValue01}
+                    span.split= splitBetvalue
+                    | #{secondaBetValue02}
+            
+        .col-xs-12.col-sm-6
+            .team.team2
+                h1.teamName= team02
+            p.text-center.betScores
+                spans.score.oldBetScore
+                    span.time WAS
+                    | #{firstBetValue01}
+                    span.split= splitBetvalue
+                    | #{firstBetValue02}
+                //- br.visible-xs-block
+                span.score.newBetScore
+                    span.time NOW
+                    | #{secondaBetValue01}
+                    span.split= splitBetvalue
+                    | #{secondaBetValue02}
+        .splitTeam
+            if teamSeparator == "versus"
+                | vs
+            if teamSeparator == "and"
+                | &
+            if teamSeparator == "or"
+                | OR
+            
