@@ -4519,10 +4519,11 @@ button.btn.ctaCenter.btn-lg {
 .offert {
   color: #509901;
   border: 4px solid #509901;
-  padding: .5em 1em;
+  padding: .8em 1em .8em 2.5em;
   display: inline-block;
   margin: .5em auto 0 auto;
   width: auto;
+  position: relative;
 }
 
 .offert span {
@@ -4530,6 +4531,22 @@ button.btn.ctaCenter.btn-lg {
   font-family: "Oswald", sans-serif;
   color: white;
   padding: 0 .3em;
+}
+
+.anglePlus {
+  width: 55px;
+  position: absolute;
+  left: -.5em;
+  top: -.5em;
+  font-weight: bold;
+}
+
+.anglePlus .anglePlus-bg {
+  fill: white;
+}
+
+.anglePlus .anglePlus-caption {
+  fill: #509901;
 }
 
 @media (min-width: 768px) {

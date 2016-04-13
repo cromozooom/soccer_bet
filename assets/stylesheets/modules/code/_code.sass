@@ -20,19 +20,30 @@
     // $normalText
     //text-align: center
     border: 4px solid $contrastText
-    padding: .5em 1em
+    padding: .8em 1em .8em 2.5em
     display: inline-block
     //float: left
     margin: .5em auto 0 auto
     width: auto
     //position: fixed
     //left: 50%
+    position: relative
     span
         font-size: 1.3em
         font-family: $custom-font
         color: $normalText
         padding: 0 .3em
 
+.anglePlus
+    width: 55px
+    position: absolute
+    left: -.5em
+    top: -.5em
+    font-weight: bold
+    .anglePlus-bg
+        fill:  $normalText
+    .anglePlus-caption
+        fill: $contrastText
 //@media (min-width: $screen-sm-min)
 //    .code
 //        text-align: right
